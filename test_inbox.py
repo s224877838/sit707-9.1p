@@ -13,10 +13,8 @@ def test_blank_student_id_returns_empty_list():
 
 
 def test_known_student_returns_tasks():
-    tasks = get_student_tasks("s123")
-    # Intentionally wrong for assignment: make CI fail so you can screenshot the failure email.
-    # After the screenshot, change the next line back to: assert len(tasks) >= 1
-    assert len(tasks) == 0
+    tasks = get_student_tasks("s224877838")
+    assert len(tasks) >= 1
     assert tasks[0]["title"] == "Assignment 1"
     assert tasks[0]["status"] == "submitted"
 
