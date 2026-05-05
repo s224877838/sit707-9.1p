@@ -78,7 +78,7 @@ class InboxTest {
                     + "then they only see their own task list (demo: one portfolio item).")
     void otherRegisteredStudent_seesOnlyTheirTasks() {
         List<Task> inbox = Inbox.getStudentTasks(OTHER_STUDENT_ID);
-        assertEquals(2, inbox.size());
+        assertEquals(1, inbox.size());
         assertEquals("Portfolio", inbox.get(0).title());
         assertEquals("graded", inbox.get(0).status());
     }
