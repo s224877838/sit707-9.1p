@@ -75,7 +75,7 @@ class InboxTest {
     @Test
     @DisplayName(
             "Given a different registered student, when they view the inbox, "
-                    + "then they only see their own task list (demo: one portfolio item).")
+                   + "then they only see their own task list (demo: one portfolio item).")
     void otherRegisteredStudent_seesOnlyTheirTasks() {
         List<Task> inbox = Inbox.getStudentTasks(OTHER_STUDENT_ID);
         assertEquals(1, inbox.size());
